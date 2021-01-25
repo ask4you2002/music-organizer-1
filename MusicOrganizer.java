@@ -62,7 +62,7 @@ public class MusicOrganizer
      */
     public void listFile(int index)
     {
-        if (validIndex(files.size() - 1) == true) {
+        if (validIndex(index) == true) {
             String filename = files.get(index);
             System.out.println(filename);
         }
@@ -74,7 +74,7 @@ public class MusicOrganizer
      */
     public void removeFile(int index)
     {
-        if(validIndex(files.size() -1) == true) {
+        if(validIndex(index) == true) {
             files.remove(index);
         }
     }

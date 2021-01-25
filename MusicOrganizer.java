@@ -38,7 +38,7 @@ public class MusicOrganizer
     
     public boolean validIndex(int index) {
         boolean indiceCorrecto;
-        if (index == files.size() - 1 )  {
+        if (index <= files.size() - 1 )  {
             indiceCorrecto = true;
         } else {
             indiceCorrecto = false;

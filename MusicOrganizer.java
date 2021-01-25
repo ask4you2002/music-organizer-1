@@ -28,6 +28,12 @@ public class MusicOrganizer
         files.add(filename);
     }
     
+    public void checkINdex(int index) {
+        if (index > files.size()) {
+            System.out.println("el rango valido es hasta" + files.size());            
+        }   
+    }
+    
     /**
      * Return the number of files in the collection.
      * @return The number of files in the collection.
